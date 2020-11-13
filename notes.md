@@ -44,6 +44,8 @@
 * __input__ and __output__ elements
 * input elements are usually referred to as __form__ elements
 * p, h1 ... h6 are output elements
+* attributes are __name="value"__ pairs
+* Every html element has many attributes
 
 
 
