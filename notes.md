@@ -47,10 +47,45 @@
 * attributes are __name="value"__ pairs
 * Every html element has many attributes
 * Grouping elements
-* __table, div, section, span__
+* __table, div, section, li, span__
 
 
 
+#### UX/UI
+
+* UX is a User Xperience
+* UX designer understands the bigger picture of the page
+* She needs to know about the end users, what they would be looking for; 
+* Have an eye for the details
+* Colors, fonts
+* Comes up with a mockup design
+
+
+* UI Designer
+* Translates the mockup designs from UX designer and creates a static HTML/CSS page
+
+* UI Developer
+* Takes the code from UI designer and makes it dynamic
+
+### Styling
+
+* (CSS) Cascading style sheets
+* External, Internal, Inline
+* In projects/products __external stylesheets__ is the most preferred as it can be reused, and made changes easily
+* General syntax of CSS is __property: value;__
+* color, height, width, font-style, border, position
+
+``` css
+accessor {
+	property: value;
+	property: value;
+	property: value;
+}
+```
+
+* accessors can name of the elements
+* Accessed by ids ___#id___
+* Accessed by classes __.class__
 
 
 
