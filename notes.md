@@ -46,6 +46,8 @@
 * p, h1 ... h6 are output elements
 * attributes are __name="value"__ pairs
 * Every html element has many attributes
+* Grouping elements
+* __table, div, section, span__
 
 
 
