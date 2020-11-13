@@ -20,4 +20,4 @@ US -> NJ, NY, Houston
 UK -> London, Bristol, Hampshire
 ```
 
-* Note: Please Google for __<table>__ and __<li>__ elements
+* Note: Please Google for __table__ and __li__ elements
