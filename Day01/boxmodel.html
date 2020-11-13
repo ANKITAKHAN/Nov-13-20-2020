@@ -13,6 +13,10 @@
             box-shadow: 2px 2px 2px black;
         }
 
+        #outer > span {
+            color: red;
+        }
+
         #inner {
             border: 1px solid pink;
             padding: 10px;
@@ -20,13 +24,17 @@
             border-radius: 5px;
             box-shadow: 2px 2px 2px pink;
         }
+
+        #inner > span {
+            color: green;
+        }
     </style>
 </head>
 <body>
     <div id="outer">
-        This is outer div
+        <span>This is outer div</span>
         <div id="inner">
-            This is inner div
+            <span>This is inner div</span>
         </div>
     </div>
 </body>
