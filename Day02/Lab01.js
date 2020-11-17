@@ -28,7 +28,7 @@ let numbersGt50 = [];
 for(let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
     if (number > 50) {
-        numbersGt50.push(number)
+        numbersGt50.push(number);
     }
 }
 console.log(numbersGt50);
