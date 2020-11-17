@@ -7,7 +7,8 @@ function work() {
 
 
 function sleep(hours) {
-    return "Sleeping " + hours + " hours";
+    //return "Sleeping " + hours + " hours";
+    return `Sleeping ${hours} hours`;
 }
 
 let output = sleep(12);
