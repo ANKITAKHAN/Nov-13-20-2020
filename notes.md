@@ -87,6 +87,49 @@ accessor {
 * Accessed by ids ___#id___
 * Accessed by classes __.class__
 
+#### Day 02
+
+* JS is a full blown OO programming language
+* JS is used in UI
+* Client-side scripting language
+* Used for form-validations
+* Javascript can be used for backend also
+
+##### Node JS
+
+* javascript engine or interpreter that is installed in your machine
+* Has server-side API
+* Run using __node filename.js__
+
+#### JavaScript
+
+* JS is an __interpreted__ language
+* JS is case-sensitive
+* JS is a dynamically typed language
+* ECMAScript is the standard for all scripting language
+* Scripting languages like JScript, ActionScript, LiveScript, JavaScript
+* ES6 was a major revision with significant improvements and changes
+* ES6 introduced all the OO concepts for scripting languages
+
+<br/>
+
+* Function hoisting
+* Interpreter runs all function definitions first, then it starts execution from the top
+* You can define a function anywhere in your file, and call it from anywhere. The order is immaterial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
