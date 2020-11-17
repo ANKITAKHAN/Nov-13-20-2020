@@ -1,0 +1,32 @@
+function add() {
+    let sum = 0;
+    for(let i = 0; i < arguments.length; i++) {
+        let number = arguments[i];
+        if (typeof(number) === "number") {
+            sum += number;
+        }
+    }
+    console.log(`Sum is ${sum}`);
+}
+
+function greatest() {
+    let max = arguments.length > 0 ? arguments[0] : 0;
+    for(let i = 0; i < arguments.length; i++) {
+        let number = arguments[i];
+        if (typeof(number) === "number") {
+            if (number > max) {
+                max = number;
+            }
+        }
+    }
+    console.log(`Max is ${max}`);
+}
+
+
+add(1,5,34,324,324,235,2353);
+add(21,65);
+add(1,55,83);
+
+greatest(1,5,34,324,324,235,2353);
+greatest(21,65);
+greatest(1,55,83,9,667);
