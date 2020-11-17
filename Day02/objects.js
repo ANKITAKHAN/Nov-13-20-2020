@@ -20,9 +20,10 @@ let car = {
 console.log(car);
 car.drive(100);
 
-let person = {
+let anything = {
     name: "Sam", age: 12, hobbies: ["TV", "Eat", "Sleep"]
 };
+console.log(anything.name, anything.age, anything.hobbies);
 
 
 
