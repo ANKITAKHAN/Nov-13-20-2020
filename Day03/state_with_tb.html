@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State with tb</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/jsx">
+        class StateExample extends React.Component {
+            
+            constructor(props) {
+                super(props);
+                this.state = {
+                    name: '',
+                    message: ''
+                };
+            }
+
+            nameChanged(e) {
+                let name = e.target.value;
+                //this.setState({ name: name });
+                this.setState({ name });
+            }
+           
+            buttonClicked() {
+                let { name } = this.state;
+                let message = `Hi ${name}`;
+                this.setState({ message });
+            }
+
+            render() {
+                return (<div>
+                    <input type="text" placeholder="Name" onChange={(e) => this.nameChanged(e)}></input> <br/>
+                    <button onClick={() => this.buttonClicked()}>Click</button>
+                    <h2>{this.state.message}</h2> 
+                </div>);
+            }
+        }
+        ReactDOM.render(<StateExample/>, document.getElementById("root"));
+    </script>
+</body>
+</html>        
