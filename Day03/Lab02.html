@@ -12,6 +12,8 @@
 <body>
     <div id="root"></div>
     <script type="text/jsx">
+        // let calc = new Calculator();
+        
         class Lab02 extends React.Component {
             constructor(props) {
                 super(props);
@@ -28,7 +30,7 @@
                 let h1 = <h1>Sum: {result}</h1>
                 ReactDOM.render(h1, document.getElementById("result"));
             }
-            
+
             subtractButtonClicked() {
                 let [a, b] = this.getNumbers();
                 let result = this.calc.subtract(a, b);

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/jsx">
+        class StateExample extends React.Component {
+            
+            constructor(props) {
+                super(props);
+                // Initialize state; state is a keyword
+                this.state = {
+                    currentTime: '',
+                    luckyNo: ''
+                };
+            }
+            getTimeButtonClicked() {
+                let now = new Date().toTimeString();
+                //automatically render() method is called after setState
+                this.setState({
+                    currentTime: now
+                });
+            }
+            getLuckyNumberButtonClicked() {
+                let num = Math.round(Math.random() * 10);
+                this.setState({
+                    luckyNo: num
+                });
+            }
+            render() {
+                return (<div>
+                    <h1>State Example</h1>
+                    <button onClick={() => this.getTimeButtonClicked()}>Get Time</button>
+                    <h1>{this.state.currentTime}</h1>
+                    <hr/>
+                    <button onClick={() => this.getLuckyNumberButtonClicked()}>Get lucky number</button>
+                    <h1>{this.state.luckyNo}</h1>
+                </div>);
+            }
+        }
+        ReactDOM.render(<StateExample/>, document.getElementById("root"));
+    </script>
+</body>
+</html>        
