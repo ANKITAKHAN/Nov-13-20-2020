@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01</title>
+    <script src="calculator.js"></script>
+    <script>
+        let calc = new Calculator();
+        const addButtonClicked = () => {
+            let [a, b] = getNumbers();
+            let result = calc.add(a, b);
+            document.getElementById("result").innerHTML = `Sum: ${result}`;
+        };
+        const subtractButtonClicked = () => {
+            let [a, b] = getNumbers();
+            let result = calc.subtract(a, b);
+            document.getElementById("result").innerHTML = `Difference: ${result}`;
+        };
+        const multiplyButtonClicked = () => {
+            let [a, b] = getNumbers();
+            let result = calc.multiply(a, b);
+            document.getElementById("result").innerHTML = `Product: ${result}`;
+        };
+
+        const getNumbers = () => {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            return [number1, number2];
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div>
+        <input type="number" id="number1" placeholder="Number 1"> <br/>
+        <input type="number" id="number2" placeholder="Number 2"> <br/><br/>
+        <button onclick="addButtonClicked()">Add</button>
+        <button onclick="subtractButtonClicked()">Subtract</button>
+        <button onclick="multiplyButtonClicked()">Multiply</button>
+        <h1 id="result"></h1>
+    </div>
+</body>
+</html>
