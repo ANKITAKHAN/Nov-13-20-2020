@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello react</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/jsx">
+        class Lab02 extends React.Component {
+            constructor(props) {
+                super(props);
+                this.calc = new Calculator();
+            }
+            getNumbers() {
+                let number1 = parseInt(document.getElementById("number1").value);
+                let number2 = parseInt(document.getElementById("number2").value);
+                return [number1, number2];
+            }
+            addButtonClicked() {
+                let [a, b] = this.getNumbers();
+                let result = this.calc.add(a, b);
+                let h1 = <h1>Sum: {result}</h1>
+                ReactDOM.render(h1, document.getElementById("result"));
+            }
+            
+            subtractButtonClicked() {
+                let [a, b] = this.getNumbers();
+                let result = this.calc.subtract(a, b);
+                let h1 = <h1>Difference: {result}</h1>
+                ReactDOM.render(h1, document.getElementById("result"));
+            }
+
+            multiplyButtonClicked() {
+                let [a, b] = this.getNumbers();
+                let result = this.calc.multiply(a, b);
+                let h1 = <h1>Product: {result}</h1>
+                ReactDOM.render(h1, document.getElementById("result"));
+            }
+
+
+            render() {
+                return (<div>
+                    <input type="number" id="number1" placeholder="Number 1"/> <br/>
+                    <input type="number" id="number2" placeholder="Number 2"/> <br/><br/>
+                    <button onClick={() => this.addButtonClicked()}>Add</button>
+                    <button onClick={() => this.subtractButtonClicked()}>Subtract</button>
+                    <button onClick={() => this.multiplyButtonClicked()}>Multiply</button>
+                    <div id="result"></div>
+                </div>);
+            }
+        }
+        ReactDOM.render(<Lab02/>, document.getElementById("root"));
+
+    </script>
+</body>
+</html>        
