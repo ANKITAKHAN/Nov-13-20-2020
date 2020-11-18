@@ -25,10 +25,11 @@ class Account {
         this.balance += amount;
         let txn = new Transaction("Deposit", amount);
         this.transactions.push(txn);
+        //this.transactions.push({ type: "Deposit", amount });
     }
 
     withdraw(amount) {
-        if (this.balance < amount || ((this.balance - amount) < 10000)) {
+        if ((this.balance - amount) < 10000) {
             throw new Error(`Insufficient balance. Withdraw denied`);
         }
         this.withdrawLimit++;
@@ -49,21 +50,21 @@ class Account {
 
 }
 
-let acc = new Account(20000);
-acc.deposit(1000);
-acc.deposit(1000);
-acc.deposit(1000);
-acc.withdraw(100);
-acc.withdraw(100);
-acc.withdraw(100);
-acc.withdraw(100);
-acc.withdraw(100);
-acc.printStatement();
-console.log("Balance", acc.balance);
-try {
-    let acc2 = new Account(1000);
-} catch (error) {
-    console.log(`Error: ${error.message}`);    
-}
+// let acc = new Account(20000);
+// acc.deposit(1000);
+// acc.deposit(1000);
+// acc.deposit(1000);
+// acc.withdraw(100);
+// acc.withdraw(100);
+// acc.withdraw(100);
+// acc.withdraw(100);
+// acc.withdraw(100);
+// acc.printStatement();
+// console.log("Balance", acc.balance);
+// try {
+//     let acc2 = new Account(1000);
+// } catch (error) {
+//     console.log(`Error: ${error.message}`);    
+// }
 
-acc.withdraw(100000);
+// acc.withdraw(100000);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04</title>
+    <script src="Lab04.js"></script>
+    <script>
+        //document.getElementById("id of the element")    
+        //input elements and output elements
+        //input .value
+        //output .innerHTML
+
+        let acc = new Account(20000);
+        
+        const depositButtonClicked = () => {
+            let amount = document.getElementById("amount").value;
+            acc.deposit(parseInt(amount));
+            let balance = acc.balance;
+            document.getElementById("message").innerHTML = `Balance: ${balance}`;
+        };
+
+        const withdrawButtonClicked = () => {
+            let amount = document.getElementById("amount").value;
+            acc.withdraw(parseInt(amount));
+            let balance = acc.balance;
+            document.getElementById("message").innerHTML = `Balance: ${balance}`;
+        };
+    </script>
+</head>
+<body>
+    <h1>My Bank</h1>
+    <div>
+        <input type="number" id="amount" placeholder="Amount"> <br/><br/>
+        <button onclick="depositButtonClicked()">Deposit</button>
+        <button onclick="withdrawButtonClicked()">Withdraw</button>
+    </div>
+    <h1 id="message"></h1>
+</body>
+</html>
