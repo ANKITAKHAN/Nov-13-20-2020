@@ -118,11 +118,33 @@ accessor {
 * You can define a function anywhere in your file, and call it from anywhere. The order is immaterial
 
 
+### React JS
+
+* Library from FB
+* It's a collection of js files that you include in your page and build
+* These files give you built in classes, properties, methods that you can use in the JS code
+* React gives you a Virtual DOM 
+* Virtual DOM is like an assistant. It gathers all the modifications you want to perform on the Real DOM tree and then reaches out at optimal times
+* React gives you component style of building UI
 
 
+#### JSX
+
+* Extended JavaScript or JavaScript Xtensions
+* Not core JS syntax
+* Used in React for designing UI
+* All React Components override render() method
+* render() method returns JSX
+* JSX has a strict syntax similar to XML
+* THere should be one root element
+* Every start tag should have a corresponding end tag
 
 
+### Create a react application
 
+* __npm i -g create-react-app__
+* __create-react-app my-first-react__
+* Navigate to __my-first-react__ folder and run __npm start__
 
 
 
