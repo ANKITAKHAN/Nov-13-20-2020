@@ -8,16 +8,16 @@ class Parent extends Component {
     this.state = {
       currentTime: ''
     };
-    this.getCurrentTime = this.getCurrentTime.bind(this); //Will explain later
+    this.callMe = this.callMe.bind(this); //Will explain later
   }
 
-  getCurrentTime() {
+  callMe() {
     this.setState({ currentTime: new Date().toTimeString() });
   }
 
   render() {
     return (<div>
-      <Input notify={this.getCurrentTime}/>
+      <Input callParent={this.callMe}/>
       <hr/>
       <Output now={this.state.currentTime}/>
     </div>);
