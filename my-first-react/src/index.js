@@ -4,9 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LoginComponent from './LoginComponent';
+import MyHeader from './MyHeader';
+import Collections from './Collections';
+
+// ReactDOM.render(
+//     <LoginComponent/>, document.getElementById('root')
+// );
+
+// ReactDOM.render(
+//     <App/>, document.getElementById('root')
+// );
+
+// ReactDOM.render(
+//     <MyHeader/>, document.getElementById('root')
+// );
 
 ReactDOM.render(
-    <LoginComponent/>, document.getElementById('root')
+    <Collections/>, document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
