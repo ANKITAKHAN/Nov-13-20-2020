@@ -10,6 +10,17 @@ class Collections extends Component {
 
     // Display the languages in a table format
 
+    generateLanguagesRows() {
+        let { languages } = this.state;
+        let rows = [];
+        languages.forEach(lang => {
+            let row = (<tr key={lang}>
+                <td>{lang}</td>
+            </tr>);
+            rows.push(row);
+        });
+        return rows;
+    }
     populateLanguagesList() {
         let { languages } = this.state;
         let list = [];
@@ -28,7 +39,6 @@ class Collections extends Component {
         });
         return list;
     }
-
     render() {
         // return (<div>
         //     <ul>
@@ -40,6 +50,17 @@ class Collections extends Component {
             <ul>
         { this.state.languages.map(lang => <li key={lang}>{lang}</li>) }
             </ul>
+            <hr/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.generateLanguagesRows()}
+                </tbody>
+            </table>
         </div>);
     }
 }
