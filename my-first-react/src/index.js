@@ -12,9 +12,9 @@ import Lab01Component from './Lab01Component';
 //     <LoginComponent/>, document.getElementById('root')
 // );
 
-// ReactDOM.render(
-//     <App/>, document.getElementById('root')
-// );
+ReactDOM.render(
+    <App/>, document.getElementById('root')
+);
 
 // ReactDOM.render(
 //     <MyHeader/>, document.getElementById('root')
@@ -24,9 +24,9 @@ import Lab01Component from './Lab01Component';
 //     <Collections/>, document.getElementById('root')
 // );
 
-ReactDOM.render(
-    <Lab01Component/>, document.getElementById('root')
-);
+// ReactDOM.render(
+//     <Lab01Component/>, document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
