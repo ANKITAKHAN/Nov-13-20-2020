@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import LoginComponent from './LoginComponent';
 import MyHeader from './MyHeader';
 import Collections from './Collections';
+import Lab01Component from './Lab01Component';
 
 // ReactDOM.render(
 //     <LoginComponent/>, document.getElementById('root')
@@ -19,8 +20,12 @@ import Collections from './Collections';
 //     <MyHeader/>, document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//     <Collections/>, document.getElementById('root')
+// );
+
 ReactDOM.render(
-    <Collections/>, document.getElementById('root')
+    <Lab01Component/>, document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
