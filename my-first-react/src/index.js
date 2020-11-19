@@ -7,13 +7,14 @@ import LoginComponent from './LoginComponent';
 import MyHeader from './MyHeader';
 import Collections from './Collections';
 import Lab01Component from './Lab01Component';
+import Parent from './Parent';
 
 // ReactDOM.render(
 //     <LoginComponent/>, document.getElementById('root')
 // );
 
 ReactDOM.render(
-    <App/>, document.getElementById('root')
+    <Parent/>, document.getElementById('root')
 );
 
 // ReactDOM.render(
