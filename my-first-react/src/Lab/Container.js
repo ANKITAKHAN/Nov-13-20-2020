@@ -10,6 +10,7 @@ class Container extends Component {
         this.state = {
             message: ''
         };
+        // If you want to use state from a method, which is not an event handler
         this.notify = this.notify.bind(this);
     }
 
