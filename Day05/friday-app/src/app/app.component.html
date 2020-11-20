@@ -1,0 +1,30 @@
+<!-- 
+  Implement login form lab that we implemented in React.
+  Username, password (admin is the correct value)
+  login button
+  Red colored message -> Incorrect username or passwore
+  Green colored message -> Logging in...
+  Disable button on validation success 
+ -->
+
+<div class="myform">
+  <input type="text" 
+    placeholder="Username" [(ngModel)]="userName"><br/>
+  <input type="password" 
+    placeholder="password" [(ngModel)]="password"> <br/>
+  <button [disabled]="isLoginValid" 
+    (click)="onLoginButtonClicked()">Login</button>
+  <h2 [ngClass]="{'correct': isLoginValid, 'wrong': !isLoginValid }">{{message}}</h2>
+</div>
+
+
+<!-- <div class="myform">
+  <h1>App component</h1>
+  <h2>{{now}}</h2>
+  <hr/>
+  <button (click)="onGetTimeClicked()">Get time</button>
+  <hr/>
+  <input type="text" placeholder="Name" (change)="onNameChanged($event)">
+  <button (click)="onButtonClicked()">Click</button>
+  <h2>{{message}}</h2>
+</div> -->
