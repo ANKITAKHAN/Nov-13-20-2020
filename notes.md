@@ -160,6 +160,41 @@ accessor {
 * Controller components
 * talk to servers
 
+### Typescript
+
+* static typed language
+* .ts files
+* it gets compiled(or transpiled) to JavaScript
+* __sudo npm i -g typescript__
+* __tsc -version__
+* __tsc filename.ts__
+* __tsc --init__ to create a typescript project
+* For automatic compilation run __tsc --watch__
+
+* __variableName: type__
+
+
+* tsc filename.js	by default older version of Javascript is taken; ignores tsConfig.json
+* Just type __tsc__ if you have tsconfig.json
+
+### Angular
+
+* Component-based UI library/framework
+* No virtual DOM like React
+* Working with Angular is fairly straightforward
+* Angular JS and Angular are very very different
+* Version 1 was called Angular JS
+* Version 2 and above are known as __Angular__
+* Latest 11
+* __sudo npm i -g @angular/cli__
+* __ng version__
+* __ng new friday-app__
+* Navigate to friday-app
+* __ng serve__ or __ng s__
+
+
+
+
 
 
 
