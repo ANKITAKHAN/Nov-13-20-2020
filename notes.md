@@ -147,6 +147,25 @@ accessor {
 * Navigate to __my-first-react__ folder and run __npm start__
 
 
+#### Some more concepts in React
+
+* Basic concepts -> JSX, State and props
+* A single page application is designed using components
+* Each component is a self sufficient independently running entity
+* Each component has a separate life cycle
+* Class based components
+* Function based components
+* React hooks
+* React Router
+* Controller components
+* talk to servers
+
+
+
+
+
+
+
 
 
 
