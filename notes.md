@@ -192,9 +192,26 @@ accessor {
 * Navigate to friday-app
 * __ng serve__ or __ng s__
 
+* made of __modules__
+* each module is made of several components
 
+[XYZ module]
+	xyz.module.ts -> configure all the components
+	[ABC]
+		abc.component.html
+		abc.component.ts
+		abc.component.scss
+		abc.component.spec.ts
+	[DEF]	
+		def.component.html
+		def.component.ts
+		def.component.scss
+		def.component.spec.ts
 
-
+* __{{variable}}__ binding syntax
+* __(eventName)="eventHandlerMethod()"__ handler binding syntax
+* __[propertyName]="variable"__ property binding syntax
+ 
 
 
 
