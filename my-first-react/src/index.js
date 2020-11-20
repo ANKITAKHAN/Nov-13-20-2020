@@ -9,13 +9,14 @@ import Collections from './Collections';
 import Lab01Component from './Lab01Component';
 import Parent from './Parent';
 import Container from './Lab/Container';
+import MyComments from './MyComments';
 
 // ReactDOM.render(
 //     <LoginComponent/>, document.getElementById('root')
 // );
 
 ReactDOM.render(
-    <Container/>, document.getElementById('root')
+    <MyComments/>, document.getElementById('root')
 );
 
 // ReactDOM.render(
