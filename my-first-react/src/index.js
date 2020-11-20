@@ -8,13 +8,14 @@ import MyHeader from './MyHeader';
 import Collections from './Collections';
 import Lab01Component from './Lab01Component';
 import Parent from './Parent';
+import Container from './Lab/Container';
 
 // ReactDOM.render(
 //     <LoginComponent/>, document.getElementById('root')
 // );
 
 ReactDOM.render(
-    <Parent/>, document.getElementById('root')
+    <Container/>, document.getElementById('root')
 );
 
 // ReactDOM.render(

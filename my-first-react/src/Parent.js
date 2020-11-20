@@ -17,7 +17,7 @@ class Parent extends Component {
 
   render() {
     return (<div>
-      <Input callParent={this.callMe}/>
+      <Input mobileNumber={this.callMe}/>
       <hr/>
       <Output now={this.state.currentTime}/>
     </div>);
