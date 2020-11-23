@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import Game from './game';
 
 @Component({
@@ -8,11 +8,15 @@ import Game from './game';
 })
 export class Lab01Component implements OnInit {
 
+
   game: Game = new Game();
   guess: number = 0;
   invalidGuess: boolean = false;
 
-  constructor() { }
+  @Input() heading: string;
+  @Input() subheading: string;
+
+  @Output() overEvent = new EventEmitter();
 
   ngOnInit(): void {
   }
@@ -23,6 +27,9 @@ export class Lab01Component implements OnInit {
     } else {
       this.invalidGuess = false;
       this.game.play(this.guess);
+    }
+    if (this.game.gameOver) {
+      this.overEvent.emit({name: 'Sam'}); // Pass any data
     }
   }
 

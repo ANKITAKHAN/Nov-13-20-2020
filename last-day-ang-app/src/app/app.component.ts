@@ -6,12 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  doSomethingWhenGameIsOver(e: any) {
+    console.log(e);
+    alert('Yay!!! Game is over');
+  }
+
+
+  someVariable = 'Enter a number between 1 and 100';
+
   title = 'last-day-ang-app';
   now: string;
   valid: boolean = false;
   cssClsName: string = 'wrong';
   name: string = '';
   message: string = '';
+  languages = ['Hindi', 'Tamil', 'English'];
 
   randomNumber: number;
 

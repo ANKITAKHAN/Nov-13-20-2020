@@ -1,4 +1,7 @@
-<app-lab01></app-lab01>
+<!-- <app-lab01 heading="Welcome" subheading="Guessing game"></app-lab01> -->
+<app-lab01 heading="Welcome" 
+  [subheading]="someVariable"
+  (overEvent)="doSomethingWhenGameIsOver($event)"></app-lab01>
 <hr/>
 
 <p>Last day</p>
@@ -19,3 +22,10 @@
 <p *ngIf="randomNumber > 5">{{randomNumber}}  Greater than 5</p>
 <p *ngIf="randomNumber == 5">It's 5</p>
 <p *ngIf="randomNumber < 5">{{randomNumber}}  Lesser than 5</p>
+<hr/>
+<ul>
+  <li *ngFor="let item of languages">
+    <h6 *ngIf="item === 'Hindi'">{{item}}</h6>
+    <h4 *ngIf="item !== 'Hindi'">{{item}}</h4>
+  </li>
+</ul>
