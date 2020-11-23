@@ -211,6 +211,13 @@ accessor {
 * __{{variable}}__ binding syntax
 * __(eventName)="eventHandlerMethod()"__ handler binding syntax
 * __[propertyName]="variable"__ property binding syntax
+
+
+### Directives
+
+* Built-in feature in ng
+* used as attributes in HTML elements
+* ngModel, ngClass, ngIg, ngFor
  
 
 

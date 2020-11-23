@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  userName: string = '';
-  password: string = '';
+  userName: string = 'admin';
+  password: string = '*******';
   message = '';
   isLoginValid = false;
 
