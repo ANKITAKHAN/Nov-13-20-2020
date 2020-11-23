@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  movies = [];
+
+  onMovieAdded(e) {
+    this.movies.push(e);
+  }
+
   doSomethingWhenGameIsOver(e: any) {
     console.log(e);
     alert('Yay!!! Game is over');

@@ -1,0 +1,15 @@
+<h5>Movie List</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.name}}</td>
+            <td>{{movie.year}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,16 @@
+$length: 8px;
+$standard-input-width: 200px;
+
+div {
+    padding: $length;
+    margin: $length; 
+}
+button {
+    margin-top: $length;
+}
+input[type='text'] {
+    width: $standard-input-width;
+}
+input[type='number'] {
+    width: $standard-input-width;
+}
