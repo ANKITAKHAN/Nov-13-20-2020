@@ -218,7 +218,20 @@ accessor {
 * Built-in feature in ng
 * used as attributes in HTML elements
 * ngModel, ngClass, ngIg, ngFor
+
+
+### Generate a component
+
+* __sudo ng g c lab01__
  
+#### What all can you do in Angular?
+
+* Generate modules __sudo ng g m modulename__
+* A module is made up of components, services, directives, other decorators
+* Dependency injection -> A way by which the objects that your classes are dependent upon, will be created and supplied to you
+* Router -> Similar to Angular
+* spec.ts -> create test cases for angular components and services
+* Every component has a life cycle with callbacks like React
 
 
 
