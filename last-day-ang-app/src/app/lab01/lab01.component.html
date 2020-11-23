@@ -1,0 +1,8 @@
+<h1>Welcome to the guessing game. Enter your number between 1 and 100</h1>
+<div>
+    <input type="number" placeholder="Enter your guess"  [(ngModel)]="guess"> <br/>
+    <h6 *ngIf="invalidGuess">Invalid input</h6>   
+    <button [disabled]="game.gameOver" (click)="playButtonClicked()">Play</button>
+    <h1>{{game.message}}</h1>
+    <h2>Attempts: {{game.attempts}}</h2>
+</div>
